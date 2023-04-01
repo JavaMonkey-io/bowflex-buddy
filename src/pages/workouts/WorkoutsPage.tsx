@@ -1,6 +1,6 @@
 import React from 'react';
 import parse from 'html-react-parser'
-import {Session, Workout, Set, workouts} from "../../data/workouts";
+import {Session, Workout, workouts} from "../../data/workouts";
 import {exercises} from "../../data/exercises";
 import {Accordion, AccordionTab} from "primereact/accordion";
 import {Button} from "primereact/button";

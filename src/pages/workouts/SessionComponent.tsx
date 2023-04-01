@@ -17,7 +17,7 @@ const SessionComponent = (props: SessionComponentProps) => {
   useEffect(() => {
     const e = exercises.find(e => e.id === sets[setId].exerciseId);
     setCurrentExercise(e);
-  }, [setId])
+  }, [setId, sets])
 
 
   const doPrev = () => {
@@ -34,12 +34,12 @@ const SessionComponent = (props: SessionComponentProps) => {
       {currentExercise &&
           <>
               <div className="flex justify-content-between align-items-center">
-                  <Button icon="pi pi-arrow-left" disabled={setId == 0} onClick={doPrev}/>
+                  <Button icon="pi pi-arrow-left" disabled={setId === 0} onClick={doPrev}/>
                   <div className="flex flex-column justify-content-center align-items-center">
                       <p className="m-0 p-0"><b>{currentExercise.title}</b></p>
                       <p className="m-0 p-0">{currentExercise.subTitle}</p>
                   </div>
-                  <Button icon="pi pi-arrow-right" disabled={setId == sets.length - 1} onClick={doNext}/>
+                  <Button icon="pi pi-arrow-right" disabled={setId === sets.length - 1} onClick={doNext}/>
               </div>
               <hr/>
               <div className="flex justify-content-center align-items-center gap-4">
@@ -59,17 +59,17 @@ const SessionComponent = (props: SessionComponentProps) => {
                               <div className="mb-8"></div>
                           </div>
                           <div>
-                              <img src={require(`../../assets/image/${currentExercise.id}-muscle.png`)} />
+                              <img src={require(`../../assets/image/${currentExercise.id}-muscle.png`)} alt="muscle" />
                           </div>
                       </div>
                   </div>
                   <div className="md:w-4 flex flex-column align-items-center">
-                      <img src={require(`../../assets/image/${currentExercise.id}-start.png`)} height={200} />
+                      <img src={require(`../../assets/image/${currentExercise.id}-start.png`)} height={200} alt="start" />
                       <LabeledList label="Start"  centerLabel={true} list={currentExercise.start}/>
                       <div className="mb-8"></div>
                   </div>
                   <div className="md:w-4 flex flex-column align-items-center">
-                      <img src={require(`../../assets/image/${currentExercise.id}-action.png`)} height={200} />
+                      <img src={require(`../../assets/image/${currentExercise.id}-action.png`)} height={200} alt="action" />
                       <LabeledList label="Action" centerLabel={true} list={currentExercise.keyPoints}/>
                   </div>
               </div>

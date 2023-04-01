@@ -17,7 +17,7 @@ const WorkoutsPage = () => {
     const s: Session = w.sessions[0] as Session;
     setWorkout(w);
     setSelectedSession(s)
-  }, [])
+  }, [id])
 
   if (workout) {
     console.log(workout);
