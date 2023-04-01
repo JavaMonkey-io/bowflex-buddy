@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.2687af79.js",
-    "static/js/787.0c5b2ce6.chunk.js": "/static/js/787.0c5b2ce6.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.2687af79.js.map": "/static/js/main.2687af79.js.map",
-    "787.0c5b2ce6.chunk.js.map": "/static/js/787.0c5b2ce6.chunk.js.map"
+    "main.css": "/bowflex-buddy/static/css/main.073c9b0a.css",
+    "main.js": "/bowflex-buddy/static/js/main.44d6b6be.js",
+    "static/js/787.0c5b2ce6.chunk.js": "/bowflex-buddy/static/js/787.0c5b2ce6.chunk.js",
+    "static/media/logo.svg": "/bowflex-buddy/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/bowflex-buddy/index.html",
+    "main.073c9b0a.css.map": "/bowflex-buddy/static/css/main.073c9b0a.css.map",
+    "main.44d6b6be.js.map": "/bowflex-buddy/static/js/main.44d6b6be.js.map",
+    "787.0c5b2ce6.chunk.js.map": "/bowflex-buddy/static/js/787.0c5b2ce6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.2687af79.js"
+    "static/js/main.44d6b6be.js"
   ]
 }
