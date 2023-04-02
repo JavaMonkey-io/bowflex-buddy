@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from "./components/Header";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HashRouter, Route, Routes} from "react-router-dom";
 import ExercisesPage from "./pages/exercises/ExercisesPage";
 import WorkoutsPage from "./pages/workouts/WorkoutsPage";
 import WorkoutPage from "./pages/workouts/WorkoutPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
       <div className="pl-2 pr-2">
       <Routes>
@@ -17,7 +17,7 @@ function App() {
         <Route path="exercises" element={<ExercisesPage />} />
       </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
