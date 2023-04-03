@@ -26,6 +26,7 @@ const WorkoutsPage = () => {
       <>
         <p className="text-lg font-semibold">{s.name}</p>
         <DataTable value={s.sets} size="small">
+          <Column header="Exercise" field="exerciseId" />
           <Column header="Category" body={(s)=>exerciseBodyPart(s)} />
           <Column header="Exercise" body={(s)=>exerciseName(s)} />
           <Column header="Sets" body={(d) => <>{d.setCountMin}-{d.setCountMax}</>} />
