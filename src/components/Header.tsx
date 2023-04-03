@@ -2,6 +2,7 @@ import React from 'react';
 import {MenuItem} from "primereact/menuitem";
 import {Menubar} from "primereact/menubar";
 import {useNavigate} from "react-router-dom";
+import {Message} from "primereact/message";
 
 const Header = () => {
 
@@ -26,7 +27,15 @@ const Header = () => {
     )
   }
 
-  return <Menubar model={mainMenu} start={start} />
+  const end = () => {
+    return (
+      <>
+        <Message severity="info" text="Work in progress" />
+      </>
+    )
+  }
+
+  return <Menubar model={mainMenu} start={start} end={end} />
 }
 
 export default Header;
